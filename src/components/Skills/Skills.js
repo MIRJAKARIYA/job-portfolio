@@ -14,7 +14,7 @@ import { SiNetlify, SiFirebase } from 'react-icons/si';
 const Skills = () => {
   return (
     <div className="w-[95%] md:w-[80%] mx-auto mt-10">
-      <h1>Skills</h1>
+      <h1 className="text-2xl text-center mb-10">Skills</h1>
       <div className="grid grid-cols-3 gap-5">
         <div class="card shadow-xl bg-slate-900 text-white">
           <div className="text-center pt-4">
@@ -89,10 +89,10 @@ const Skills = () => {
             </div>
           </div>
           <div class="card-body mt-[-15px]">
-            <h2 class="text-center">Back End Development</h2>
+            <h2 class="text-center">Other Technologies</h2>
             <div className="grid grid-cols-4 justify-items-center">
               <div>
-                <p className="text-3xl flex justify-center text-orange-500">
+                <p className="text-3xl flex justify-center text-white">
                   <AiFillGithub />
                 </p>
                 <p className="text-sm">GITHUB</p>

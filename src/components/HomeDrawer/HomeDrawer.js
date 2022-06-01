@@ -4,6 +4,8 @@ import ProfileImg from "../../images/portfolio-pic.jpg";
 import './HomeDrawer.css';
 import AboutMe from "../AboutMe/AboutMe";
 import Skills from "../Skills/Skills";
+import Projects from "../Projects/Projects";
+import Contact from "../Contact/Contact";
 const HomeDrawer = () => {
   return (
     <div class="drawer drawer-mobile">
@@ -13,6 +15,8 @@ const HomeDrawer = () => {
         <Banner></Banner>
         <AboutMe></AboutMe>
         <Skills></Skills>
+        <Projects></Projects>
+        <Contact></Contact>
       </div>
       <div class="drawer-side lg:sticky top-0">
         <label for="my-drawer-2" class="drawer-overlay"></label>
