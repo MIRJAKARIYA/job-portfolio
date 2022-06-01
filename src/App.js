@@ -3,7 +3,7 @@ import Home from './components/Home/Home';
 
 function App() {
   return (
-    <div className="App"  data-theme="dark">
+    <div data-theme="dark">
         <div className='text-right pr-2 pt-2'>
         <label
           for="my-drawer-2"

@@ -7,8 +7,8 @@ import { AiFillLinkedin, AiFillFacebook, AiFillGithub } from 'react-icons/ai';
 const Contact = () => {
   return (
     <>
-      <h1 className="text-2xl text-center mt-[100px]">Contact me</h1>
-      <div className="w-[95%] md:w-[80%] mx-auto mt-10 mb-[100px] flex p-4">
+      <h1 className="text-2xl text-center mt-[100px]" id="contact-me">Contact me</h1>
+      <div className="w-[95%] md:w-[80%] mx-auto mt-10 mb-[100px] lg:flex p-4">
         <div className="flex-1 flex justify-center items-center">
           <div>
             <h1 className="text-2xl text-warning underline">CONTACT INFO.</h1>
@@ -58,8 +58,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1">
-          <form action="">
+        <div className="flex-1 mt-4 lg:mt-0 text-center lg:text-left">
+          <form>
             <div>
               <input
                 type="text"

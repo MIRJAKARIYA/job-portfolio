@@ -13,9 +13,9 @@ import { SiNetlify, SiFirebase } from 'react-icons/si';
 
 const Skills = () => {
   return (
-    <div className="w-[95%] md:w-[80%] mx-auto mt-[100px]">
+    <div className="w-[95%] md:w-[80%] mx-auto mt-[100px]" id="skills">
       <h1 className="text-2xl text-center mb-10">Skills</h1>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
         <div class="card shadow-xl bg-slate-900 text-white">
           <div className="text-center pt-4">
             <div class="radial-progress text-white" style={{ "--value": 100 }}>

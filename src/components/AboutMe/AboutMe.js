@@ -4,12 +4,12 @@ import Resume from './my-resume.pdf'
 const AboutMe = () => {
   return (
     <>
-      <h1 className="text-2xl text-center mt-[100px]">
+      <h1 id="about-me" className="text-2xl text-center mt-[100px]">
         <span>About</span>Me
       </h1>
       <div className="w-[95%] md:w-[80%] mx-auto mt-10">
-        <div className="flex flex-col lg:flex-row">
-          <div className="w-[40%]">
+        <div className="flex flex-col lg:flex-row gap-5">
+          <div className="lg:w-[40%] ml-5 lg:ml-0">
             <p className="text-xl font-semibold">
               Name: <span className="text-yellow-600">Mir Jakariya</span>
             </p>
@@ -34,7 +34,7 @@ const AboutMe = () => {
               Download Resume
             </a>
           </div>
-          <div className="w-[60%]">
+          <div className="lg:w-[60%]">
             <h1 className="text-xl ml-[-220px] text-center text-accent">Educational Background</h1>
             <div className="flex justify-center">
               <ul class="steps steps-vertical">

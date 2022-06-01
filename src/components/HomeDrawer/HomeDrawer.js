@@ -10,10 +10,9 @@ const HomeDrawer = () => {
   return (
     <div class="drawer drawer-mobile">
       <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-      <div class="drawer-content mt-20">
+      <div class="drawer-content mt-20 scroll-smooth">
         {/* <!-- Page content here --> */}
         <Banner></Banner>
-
         <Skills></Skills>
         <AboutMe></AboutMe>
         <Projects></Projects>
@@ -35,23 +34,23 @@ const HomeDrawer = () => {
             </h1>
             <h1 className="text-center text-xl">Front End Developer</h1>
             <li className="mt-3">
-              <a className="text-center btn btn-secondary text-white flex w-[70%] mx-auto" href="/">
-                Sidebar Item 1
+              <a href='#about-me' className="text-center btn btn-secondary text-white flex w-[70%] mx-auto">
+                About me
               </a>
             </li>
             <li className="mt-3">
-              <a className="text-white flex text-center btn btn-accent w-[70%] mx-auto" href="/">
-                Sidebar Item 2
+              <a className="text-white flex text-center btn btn-accent w-[70%] mx-auto" href="#skills">
+                Skills
               </a>
             </li>
             <li className="mt-3">
-              <a className="text-white flex text-center btn btn-secondary w-[70%] mx-auto" href="/">
-                Sidebar Item 2
+              <a className="text-white flex text-center btn btn-secondary w-[70%] mx-auto" href="#projects">
+                Projects
               </a>
             </li>
             <li className="mt-3">
-              <a className="text-white flex text-center btn btn-accent w-[70%] mx-auto" href="/">
-                Sidebar Item 2
+              <a className="text-white flex text-center btn btn-accent w-[70%] mx-auto" href="#contact-me">
+                Contact me
               </a>
             </li>
         </ul>
