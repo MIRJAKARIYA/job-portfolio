@@ -13,8 +13,9 @@ const HomeDrawer = () => {
       <div class="drawer-content mt-20">
         {/* <!-- Page content here --> */}
         <Banner></Banner>
-        <AboutMe></AboutMe>
+
         <Skills></Skills>
+        <AboutMe></AboutMe>
         <Projects></Projects>
         <Contact></Contact>
       </div>

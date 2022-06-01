@@ -6,9 +6,9 @@ import Volunteer from '../../images/volunteer-network.png'
 const Projects = () => {
   return (
    <>
-   <h1 className="text-2xl mt-10 text-center">Full Stack Projects</h1>
+   <h1 className="text-2xl mt-[100px] text-center">Full Stack Projects</h1>
      <div className="w-[95%] md:w-[80%] mx-auto mt-10">
-      <div className="border-2 grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-3 gap-5">
         <div class="card bg-slate-900 text-white shadow-xl p-2">
           <figure>
             <img
