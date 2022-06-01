@@ -34,9 +34,14 @@ const AboutMe = () => {
             </a>
           </div>
           <div className="w-[60%] border-secondary border-2">
-            <h1 className="text-xl text-center">Other information</h1>
-            <div>
-              
+            <h1 className="text-xl text-center">Educational Background</h1>
+            <div className="flex justify-center">
+              <ul class="steps steps-vertical">
+                <li class="step step-warning"><span>Graduation: BSc in EEE at Daffodil International University</span></li>
+                <li class="step step-secondary">HSC: Science at MEH Arif College</li>
+                <li class="step step-accent">SSC: Science at Rajabari High School</li>
+    
+              </ul>
             </div>
           </div>
         </div>
