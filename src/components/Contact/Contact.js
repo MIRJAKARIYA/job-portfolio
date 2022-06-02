@@ -3,8 +3,37 @@ import { MdEmail } from "react-icons/md";
 import { AiFillPhone } from "react-icons/ai";
 import { ImLocation2 } from "react-icons/im";
 import { AiFillLinkedin, AiFillFacebook, AiFillGithub } from 'react-icons/ai';
+import { toast } from "react-toastify";
 
 const Contact = () => {
+
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const address = e.target.address.value;
+    const question = e.target.question.value;
+
+    fetch('http://localhost:5000/addquestion',{
+      method: 'POST',
+      headers:{
+         'content-type':'application/json'
+      },
+      body:JSON.stringify({
+        name:name,
+        email:email,
+        address:address,
+        question: question
+      })
+    })
+    .then(res => res.json())
+    .then(data => {
+      if(data.acknowledged){
+        toast.success("Thank you for your question..")
+      }
+    })
+  }
+
   return (
     <>
       <h1 className="text-2xl text-center mt-[100px]" id="contact-me">Contact me</h1>
@@ -36,7 +65,7 @@ const Contact = () => {
                         <AiFillLinkedin/>
                     </p>
                     <p>
-                        <a href="/" className="underline text-accent ml-1">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/mir-jakariya-99b777229/" className="underline text-accent ml-1">LinkedIn</a>
                     </p>
                 </div>
                 <div className="flex items-center ml-2">
@@ -44,7 +73,7 @@ const Contact = () => {
                         <AiFillFacebook/>
                     </p>
                     <p>
-                        <a href="/" className="underline text-accent ml-1">Facebook</a>
+                        <a href="https://www.facebook.com/MIRJAKARIYA239" className="underline text-accent ml-1">Facebook</a>
                     </p>
                 </div>
                 <div className="flex items-center ml-2">
@@ -52,42 +81,50 @@ const Contact = () => {
                         <AiFillGithub/>
                     </p>
                     <p>
-                        <a href="/" className="underline text-accent ml-1">Github</a>
+                        <a href="https://github.com/MIRJAKARIYA" className="underline text-accent ml-1">Github</a>
                     </p>
                 </div>
             </div>
           </div>
         </div>
         <div className="flex-1 mt-4 lg:mt-0 text-center lg:text-left">
-          <form>
+          <form onSubmit={handleSubmit}>
             <div>
               <input
                 type="text"
-                placeholder="Type here"
+                placeholder="Your name"
+                name="name"
                 class="input input-bordered input-warning w-full max-w-[500px]"
+                required
               />
             </div>
             <div>
               <input
                 type="text"
-                placeholder="Type here"
+                placeholder="Your email"
+                name="email"
                 class="input input-bordered input-warning w-full max-w-[500px] mt-4"
+                required
               />
             </div>
             <div>
               <input
                 type="text"
-                placeholder="Type here"
+                placeholder="Your address"
+                name="address"
                 class="input input-bordered input-warning w-full max-w-[500px] mt-4"
+                required
               />
             </div>
             <div>
               <textarea
                 class="textarea textarea-warning w-full max-w-[500px] mt-4"
-                placeholder="Bio"
+                placeholder="Your question"
+                name="question"
+                required
               ></textarea>
             </div>
-            <button className="btn btn-warning btn-sm mt-2 px-5">Send</button>
+            <button type="submit" className="btn btn-warning btn-sm mt-2 px-5">Send</button>
           </form>
         </div>
       </div>
