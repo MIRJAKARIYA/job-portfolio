@@ -1,29 +1,31 @@
 import React from "react";
 import { AiFillHtml5 } from "react-icons/ai";
-import { DiCss3 } from 'react-icons/di';
-import { IoLogoJavascript } from 'react-icons/io';
-import { FaReact } from 'react-icons/fa';
-import { FaNodeJs } from 'react-icons/fa';
-import { SiExpress } from 'react-icons/si';
-import { DiMongodb } from 'react-icons/di';
-import { SiPhotopea } from 'react-icons/si';
-import { AiFillGithub } from 'react-icons/ai';
-import { SiNetlify, SiFirebase } from 'react-icons/si';
-
+import { DiCss3 } from "react-icons/di";
+import { IoLogoJavascript } from "react-icons/io";
+import { FaReact } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { DiMongodb } from "react-icons/di";
+import { SiPhotopea } from "react-icons/si";
+import { AiFillGithub } from "react-icons/ai";
+import { SiNetlify, SiFirebase } from "react-icons/si";
 
 const Skills = () => {
   return (
     <div className="w-[95%] md:w-[80%] mx-auto mt-[100px]" id="skills">
       <h1 className="text-2xl text-center mb-10">Skills</h1>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-        <div class="card shadow-xl bg-slate-900 text-white">
+        <div className="card shadow-xl bg-slate-900 text-white">
           <div className="text-center pt-4">
-            <div class="radial-progress text-white" style={{ "--value": 100 }}>
+            <div
+              className="radial-progress text-white"
+              style={{ "--value": 100 }}
+            >
               100%
             </div>
           </div>
-          <div class="card-body mt-[-15px]">
-            <h2 class="text-center">Front End Development</h2>
+          <div className="card-body mt-[-15px]">
+            <h2 className="text-center">Front End Development</h2>
             <div className="grid grid-cols-4 justify-items-center">
               <div>
                 <p className="text-3xl flex justify-center text-orange-500">
@@ -52,14 +54,17 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div class="card shadow-xl bg-slate-900 text-white">
+        <div className="card shadow-xl bg-slate-900 text-white">
           <div className="text-center pt-4">
-            <div class="radial-progress text-white" style={{ "--value": 50 }}>
+            <div
+              className="radial-progress text-white"
+              style={{ "--value": 50 }}
+            >
               50%
             </div>
           </div>
-          <div class="card-body mt-[-15px]">
-            <h2 class="text-center">Back End Development</h2>
+          <div className="card-body mt-[-15px]">
+            <h2 className="text-center">Back End Development</h2>
             <div className="grid grid-cols-3 justify-items-center">
               <div>
                 <p className="text-3xl flex justify-center text-green-500">
@@ -82,14 +87,17 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div class="card shadow-xl bg-slate-900 text-white">
+        <div className="card shadow-xl bg-slate-900 text-white">
           <div className="text-center pt-4">
-            <div class="radial-progress text-white" style={{ "--value": 100 }}>
+            <div
+              className="radial-progress text-white"
+              style={{ "--value": 100 }}
+            >
               100%
             </div>
           </div>
-          <div class="card-body mt-[-15px]">
-            <h2 class="text-center">Other Technologies</h2>
+          <div className="card-body mt-[-15px]">
+            <h2 className="text-center">Other Technologies</h2>
             <div className="grid grid-cols-4 justify-items-center">
               <div>
                 <p className="text-3xl flex justify-center text-white">
@@ -118,7 +126,6 @@ const Skills = () => {
             </div>
           </div>
         </div>
-  
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
-import Resume from './my-resume.pdf'
+import Resume from "./my-resume.pdf";
+import { BiDownload } from "react-icons/bi";
 
 const AboutMe = () => {
   return (
@@ -9,7 +10,7 @@ const AboutMe = () => {
       </h1>
       <div className="w-[95%] md:w-[80%] mx-auto mt-10">
         <div className="flex flex-col lg:flex-row gap-5">
-          <div className="lg:w-[40%] ml-5 lg:ml-0">
+          <div className="lg:w-[40%] mx-auto lg:ml-0">
             <p className="text-xl font-semibold">
               Name: <span className="text-yellow-600">Mir Jakariya</span>
             </p>
@@ -29,19 +30,36 @@ const AboutMe = () => {
             </p>
             <a
               href={Resume}
-              className=" bg-slate-600 w-[35%] px-2 mt-4 py-2 rounded-xl flex justify-center" download={true}
+              className="bg-slate-600 lg:w-[35%] px-2 mt-4 py-2 rounded-xl text-white flex justify-center items-center"
+              download={true}
             >
-              Download Resume
+              <span className="mr-2">Download Resume</span> <BiDownload />
             </a>
           </div>
           <div className="lg:w-[60%]">
-            <h1 className="text-xl ml-[-220px] text-center text-accent">Educational Background</h1>
+            <h1 className="text-xl ml-[-220px] text-center text-accent">
+              Educational Background
+            </h1>
             <div className="flex justify-center">
-              <ul class="steps steps-vertical">
-                <li class="step step-warning"><span>Graduation: BSc in EEE at Daffodil International University</span></li>
-                <li class="step step-secondary">HSC: Science at MEH Arif College</li>
-                <li class="step step-accent">SSC: Science at Rajabari High School</li>
-    
+              <ul className="steps steps-vertical">
+                <li className="step step-warning">
+                  <span>
+                    <span className="text-warning">Graduation</span>: BSc in EEE
+                    at Daffodil International University
+                  </span>
+                </li>
+                <li className="step step-secondary">
+                  <span>
+                    <span className="text-warning">HSC</span>: Science at MEH
+                    Arif College
+                  </span>
+                </li>
+                <li className="step step-accent">
+                  <span>
+                    <span className="text-warning">SSC</span>: Science at
+                    Rajabari High School
+                  </span>
+                </li>
               </ul>
             </div>
           </div>
